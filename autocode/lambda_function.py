@@ -61,11 +61,11 @@ def lambda_handler(event, context):
 
         # 5️⃣ Upload database back to S3
         s3.upload_file(local_db, bucket, "students.db")
-        print("Database uploaded to S3")
+        print("Database uploaded to S3!!")
 
         return {
             "statusCode": 200,
-            "message": "Database created and uploaded successfully 🚀!!"
+            "message": "Database created in bucket and uploaded successfully 🚀!!"
         }
 
     except Exception as e:
