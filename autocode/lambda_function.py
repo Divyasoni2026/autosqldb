@@ -65,7 +65,7 @@ def lambda_handler(event, context):
 
         return {
             "statusCode": 200,
-            "message": "Database created in bucket and uploaded successfully 🚀!!"
+            "message": "Database created in bucket and uploaded successfully!!"
         }
 
     except Exception as e:
